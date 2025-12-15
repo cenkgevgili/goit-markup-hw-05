@@ -485,7 +485,6 @@ footer {
   width: 408px;
   height: 584px;
   position: relative;
-  top: -50px;
 }
 .is-open {
   display: flex;
@@ -510,8 +509,7 @@ footer {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  position: absolute;
+  margin-top: 72px;
   text-align: center;
-  top: 152px;
   letter-spacing: 0.02em;
 }
