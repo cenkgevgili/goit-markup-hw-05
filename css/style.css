@@ -571,6 +571,9 @@ footer {
 }
 .form-input:active {
   border-color: #404bbf;
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .textarea {
   width: 360px;
@@ -613,6 +616,9 @@ footer {
 }
 .submit-button:hover {
   background-color: #404bbf;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal:target {
   display: flex;
