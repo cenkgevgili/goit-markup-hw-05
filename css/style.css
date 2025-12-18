@@ -484,8 +484,8 @@ footer {
 }
 
 .icon-close {
-  width: 24px;
-  height: 24px;
+  width: 8px;
+  height: 8px;
   display: block;
 }
 .modal-icon-close {
@@ -495,7 +495,12 @@ footer {
   width: 24px;
   height: 24px;
   cursor: pointer;
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e7e9fc;
+  border: 1px solid #0000001a;
+  border-radius: 50%;
 }
 .modal-close-text {
   color: #2e2f42;
@@ -530,8 +535,9 @@ footer {
   gap: 4px;
 }
 .form-span {
-  font-size: 14px;
+  font-size: 12px;
   color: #9aa0b4;
+  line-height: 14px;
 }
 .input-wrap {
   position: relative;
@@ -543,20 +549,28 @@ footer {
   transform: translateY(-50%);
   width: 20px;
   height: 20px;
-  fill: #404bbf;
+  fill: #2e2f42;
   pointer-events: none;
+  transition: fill 180ms ease-in-out;
+}
+.input-wrap:focus-within .icon {
+  fill: #404bbf;
 }
 .form-input {
   width: 360px;
   height: 40px;
+  padding: 8px 12px 8px 44px;
+  border: 1px solid #2e2f4266;
+  border-radius: 4px;
+  color: #434455;
 }
 .form-input::placeholder {
-  color: #bfc6da;
+  color: #2e2f4266;
+  font-size: 12px;
+  line-height: 14px;
 }
-.form-input:focus {
-  outline: none;
+.form-input:active {
   border-color: #404bbf;
-  box-shadow: 0 6px 24px rgba(77, 90, 229, 0.12);
 }
 .textarea {
   width: 360px;
