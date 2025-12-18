@@ -475,7 +475,7 @@ footer {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
 }
@@ -559,7 +559,7 @@ footer {
 .form-input {
   width: 360px;
   height: 40px;
-  padding: 8px 12px 8px 44px;
+  padding: 8px 12px 8px 38px;
   border: 1px solid #2e2f4266;
   border-radius: 4px;
   color: #434455;
@@ -613,4 +613,7 @@ footer {
 }
 .submit-button:hover {
   background-color: #404bbf;
+}
+.modal:target {
+  display: flex;
 }

@@ -29,7 +29,7 @@
           <ul class="page-nav">
             <li><a class="link active" href="#">Studio</a></li>
             <li><a class="link" href="#">Portfolio</a></li>
-            <li><a class="link" href="#">Contact</a></li>
+            <li><a class="link" href="#contact-modal">Contact</a></li>
           </ul>
         </nav>
       </div>
@@ -234,13 +234,13 @@
           </li>
         </ul>
       </section>
-      <div class="modal is-open">
+      <div id="contact-modal" class="modal">
         <div class="modal-content">
-          <div class="modal-icon-close">
+          <a href="#" class="modal-icon-close" aria-label="Close modal">
             <svg class="icon icon-close">
               <use xlink:href="./images/icons.svg#icon-close"></use>
             </svg>
-          </div>
+          </a>
           <p class="modal-close-text">Leave your contacts and we will call you back</p>
           <form class="modal-form" name="contact_form" novalidate>
             <label class="form-label">
